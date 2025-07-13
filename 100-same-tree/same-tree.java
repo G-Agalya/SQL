@@ -23,19 +23,10 @@ class Solution {
         return val;
     }
     public boolean comp(){
-        if (arr1.size() != arr2.size()) return false;
-
-        for (int i = 0; i < arr1.size(); i++) {
-            Integer val1 = arr1.get(i);
-            Integer val2 = arr2.get(i);
-
-            if (val1 == null && val2 == null) continue;
-
-            if (val1 == null || val2 == null || !val1.equals(val2)) {
-                return false;
-            }
+        if(arr1.equals(arr2)){
+            return true;
         }
-        return true;
+        return false;
     }
     public void arr1val(TreeNode p){
         inorderp(p);
